@@ -1,0 +1,207 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+a.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-item a {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255) !important;
+}
+
+h4 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.card-border,
+.card-accesorie {
+  border: solid 1px #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease-out.2s;
+  cursor: pointer;
+}
+
+.card-border:hover,
+.card-accesorie:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-height: 184px;
+}
+
+/* see more */
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* see more */
+
+.accesories__image {
+  max-height: 270px;
+}
+.events {
+  margin-bottom: 150px;
+}
+
+.events .card {
+  overflow: hidden;
+  background: #eeeeee;
+}
+/* button login */
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+/* button login */
+#footer {
+  background-image: url("../images/polygon-scatter-haikei.png");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+@media screen and (min-width: 700px) {
+  .footer {
+    width: 50%;
+  }
+}
+
+.divisor {
+  position: relative;
+}
+/* divisor footer */
+.custom-shape-divider-bottom-1665185695 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1665185695 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1665185695 .shape-fill {
+  fill: #001829;
+}
+/* divisor footer */
+/* divisor carousel */
+.custom-shape-divider-bottom-1665186255 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1665186255 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 144px;
+}
+
+.custom-shape-divider-bottom-1665186255 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1665186255 svg {
+    width: calc(150% + 1.3px);
+    height: 121px;
+  }
+}
+/* divisor carousel */
