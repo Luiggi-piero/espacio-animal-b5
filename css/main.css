@@ -92,6 +92,7 @@ h4 {
 }
 .events {
   margin-bottom: 200px;
+  overflow-x: hidden;
 }
 
 .events .card {
