@@ -91,7 +91,7 @@ h4 {
   max-height: 270px;
 }
 .events {
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .events .card {
@@ -184,3 +184,27 @@ h4 {
   }
 }
 /* divisor carousel */
+#footer {
+  position: relative;
+}
+/* divisor footer */
+.custom-shape-divider-bottom-1665369462 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg) translateY(100%);
+}
+
+.custom-shape-divider-bottom-1665369462 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1665369462 .shape-fill {
+  fill: #001829;
+}
